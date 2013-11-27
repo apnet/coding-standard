@@ -1,0 +1,21 @@
+{
+    "name" : "apnet/coding-standard",
+    "type" : "library",
+    "description" : "Apnet PHP coding standard",
+    "license" : "MIT",
+    "require-dev" : {
+        "squizlabs/php_codesniffer" : "~1.4",
+        "phpunit/phpunit" : "~3.7"
+    },
+    "extra" : {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "autoload" : {
+        "psr-0" : { "Apnet_": "src/" }
+    },
+    "config": {
+        "bin-dir" : "bin"
+    }
+}
