@@ -6,7 +6,7 @@ class FunctionCommentSniffTest extends \PHPUnit_Framework_TestCase
 {
 
   /**
-   * Test Apnet Commenting_FunctionComment Sniff
+   * Test `Apnet.Commenting.FunctionComment` Sniff
    *
    * @return null
    */
@@ -27,15 +27,14 @@ class FunctionCommentSniffTest extends \PHPUnit_Framework_TestCase
 
     $errors = $file->getErrors();
 
-    $this->assertTrue(isset($errors[8][3][0]["source"]));
+    $this->assertTrue(isset($errors[12][3][0]["source"]));
     $this->assertEquals(
-      "Apnet.Commenting.FunctionComment.MissingParamTag", $errors[8][3][0]["source"]
+      "Apnet.Commenting.FunctionComment.MissingParamTag", $errors[12][3][0]["source"]
     );
 
-    $this->assertTrue(isset($errors[10][1][0]["source"]));
+    $this->assertTrue(isset($errors[14][1][0]["source"]));
     $this->assertEquals(
-      "Apnet.Commenting.FunctionComment.MissingReturn", $errors[10][1][0]["source"]
+      "Apnet.Commenting.FunctionComment.MissingReturn", $errors[14][1][0]["source"]
     );
   }
-
 }

@@ -2,7 +2,9 @@
 
 use PEAR_Sniffs_Commenting_FunctionCommentSniff as BaseSniff;
 
+// @codingStandardsIgnoreStart
 class Apnet_Sniffs_Commenting_FunctionCommentSniff extends BaseSniff
+// @codingStandardsIgnoreEnd
 {
 
   /**
@@ -45,5 +47,4 @@ class Apnet_Sniffs_Commenting_FunctionCommentSniff extends BaseSniff
 
     return preg_match('#{@inheritdoc}#i', $content) === 1;
   }
-
 }
