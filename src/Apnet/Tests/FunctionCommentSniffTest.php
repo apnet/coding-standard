@@ -14,17 +14,13 @@ class FunctionCommentSniffTest extends \PHPUnit_Framework_TestCase
   {
     $codeSniffer = new \PHP_CodeSniffer();
     $codeSniffer->process(
-      array(), __DIR__ . "/..", array("Apnet_Sniffs_Commenting_FunctionCommentSniff")
+      array(), __DIR__ . "/..", array("Apnet.Commenting.FunctionComment")
     );
     $codeSniffer->setIgnorePatterns(array());
 
-    $codeSniffer->processFile(
-      dirname(__FILE__) . "/FunctionCommentSniffClass.php"
+    $file = $codeSniffer->processFile(
+      dirname(__FILE__) . "/PhpUnit/FunctionCommentSniffClass.php"
     );
-    $files = $codeSniffer->getFiles();
-
-    $file = array_pop($files);
-    /* @var $file \PHP_CodeSniffer_File */
 
     $this->assertEquals(0, $file->getWarningCount());
     $this->assertEquals(2, $file->getErrorCount());
@@ -32,10 +28,14 @@ class FunctionCommentSniffTest extends \PHPUnit_Framework_TestCase
     $errors = $file->getErrors();
 
     $this->assertTrue(isset($errors[8][3][0]["source"]));
-    $this->assertEquals("Apnet.Commenting.FunctionComment.MissingParamTag", $errors[8][3][0]["source"]);
+    $this->assertEquals(
+      "Apnet.Commenting.FunctionComment.MissingParamTag", $errors[8][3][0]["source"]
+    );
 
     $this->assertTrue(isset($errors[10][1][0]["source"]));
-    $this->assertEquals("Apnet.Commenting.FunctionComment.MissingReturn", $errors[10][1][0]["source"]);
+    $this->assertEquals(
+      "Apnet.Commenting.FunctionComment.MissingReturn", $errors[10][1][0]["source"]
+    );
   }
 
 }

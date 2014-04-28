@@ -1,6 +1,6 @@
 <?php
 
-namespace Apnet\Tests;
+namespace Apnet\Tests\PhpUnit;
 
 class FunctionCommentSniffClass
 {

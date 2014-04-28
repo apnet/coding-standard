@@ -1,0 +1,17 @@
+language: php
+
+php:
+- 5.3
+
+env:
+   global:
+      secure: Roz6CKDX0aLflwTCbExErkAV+VMmbpbpYX9JUeS6Y7dmfS5s0q1JERvAwsFuCQL36KMKD5VM43AOmMXyv8SmTRcr9xwr1RQUIEyzaOYLFASEuYw46z3btQxwgcAVS80lDBCO9eAyxz6/+Z5jCQ+9dn7tlGm+fqFEuqlP/u3d+OY=
+
+before_script:
+   - composer self-update
+   - sh -c "if $TRAVIS_SECURE_ENV_VARS; then composer config --global github-oauth.github.com $GITHUB_OAUTH_TOKEN; fi"
+   - composer install
+
+script:
+   - bin/phpunit --coverage-text
+   - bin/phpcs --standard=src/Apnet --ignore=*/PhpUnit/* src
