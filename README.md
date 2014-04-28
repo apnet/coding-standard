@@ -1,7 +1,7 @@
 Apnet PHP coding standard
 =========================
 
-PSR-2 coding standard with two-spaces-indents
+PSR-2 coding standard with two-spaces indent
 
 Installation
 ------------
@@ -16,6 +16,25 @@ Add requirements to composer.json:
   }
 }
 ```
+
+Sniffs
+------
+
+* PSR2
+* PEAR.Commenting.InlineComment
+* Apnet.Commenting.FunctionComment - {@inheritdoc} support
+* Apnet.NamingConvensions.ValidVariableName - require camelCase property names
+
+Sniffs with 2-spaces indent
+---------------------------
+
+* Generic.WhiteSpace.ScopeIndent
+* PEAR.ControlStructures.MultiLineCondition
+* PEAR.WhiteSpace.ObjectOperatorIndent
+* PSR2.Classes.ClassDeclaration
+* PSR2.ControlStructures.SwitchDeclaration
+* PSR2.Methods.FunctionCallSignature
+* Squiz.Functions.MultiLineFunctionDeclaration
 
 Getting PHP_CodeSniffer report
 ------------------------------
