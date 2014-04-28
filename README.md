@@ -11,7 +11,7 @@ Add requirements to composer.json:
 ``` json
 {
   "require-dev" : {
-    "squizlabs/php_codesniffer" : "~1.5,<2.0"
+    "squizlabs/php_codesniffer" : "~1.5,<2.0",
     "apnet/coding-standard" : "~1.5"
   }
 }
@@ -20,4 +20,4 @@ Add requirements to composer.json:
 Getting PHP_CodeSniffer report
 ------------------------------
 
-Run `phpcs --standard=vendor/apnet/coding-standard/src/Apnet src` to analize code inside `src`
+Run `phpcs --standard=vendor/apnet/coding-standard/src/Apnet src` to analize code inside `src` directory
