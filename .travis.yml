@@ -15,3 +15,4 @@ before_script:
 script:
    - bin/phpunit --coverage-text
    - bin/phpcs --standard=src/Apnet --ignore=*/PhpUnit/* src
+   - bin/phpcs --standard=src/Apnet tests

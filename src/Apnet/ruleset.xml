@@ -2,21 +2,19 @@
 <ruleset name="Apnet">
     <description>The Apnet coding standard.</description>
 
-    <rule ref="PEAR">
-        <exclude name="PEAR.Commenting.ClassComment" />
-        <exclude name="PEAR.Commenting.FileComment" />
-        <exclude name="PEAR.Commenting.FunctionComment" />
-        <exclude name="PEAR.WhiteSpace.ScopeIndent" />
-        <exclude name="PEAR.NamingConventions.ValidFunctionName" />
-        <exclude name="PEAR.NamingConventions.ValidVariableName" />
-        <exclude name="PEAR.Files.IncludingFile" />
-    </rule>
+    <rule ref="PSR2" />
 
-    <rule ref="Zend.NamingConventions.ValidVariableName" />
-
-    <rule ref="PEAR.WhiteSpace.ScopeClosingBrace">
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
         <properties>
             <property name="indent" value="2"/>
+        </properties>
+    </rule>
+
+    <rule ref="PEAR.Commenting.InlineComment" />
+
+    <rule ref="PEAR.ControlStructures.MultiLineCondition">
+        <properties>
+            <property name="indent" value="2" />
         </properties>
     </rule>
 
@@ -26,9 +24,29 @@
         </properties>
     </rule>
 
-    <rule ref="PEAR.Functions.FunctionCallSignature">
+    <rule ref="PSR2.Classes.ClassDeclaration">
         <properties>
             <property name="indent" value="2"/>
         </properties>
     </rule>
+
+    <rule ref="PSR2.ControlStructures.SwitchDeclaration">
+        <properties>
+            <property name="indent" value="2"/>
+        </properties>
+    </rule>
+
+    <rule ref="PSR2.Methods.FunctionCallSignature">
+        <properties>
+            <property name="indent" value="2"/>
+            <property name="allowMultipleArguments" value="true"/>
+        </properties>
+    </rule>
+
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration">
+        <properties>
+            <property name="indent" value="2"/>
+        </properties>
+    </rule>
+
 </ruleset>
