@@ -11,8 +11,7 @@ Add requirements to composer.json:
 ``` json
 {
   "require-dev" : {
-    "squizlabs/php_codesniffer" : "~1.5,<2.0",
-    "apnet/coding-standard" : "~1.5"
+    "apnet/coding-standard" : "~1.5,<2.0"
   }
 }
 ```
