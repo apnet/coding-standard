@@ -2,6 +2,9 @@
 
 namespace Apnet\Tests;
 
+/**
+ * Test `Apnet.Commenting` Sniff
+ */
 class FunctionCommentSniffTest extends \PHPUnit_Framework_TestCase
 {
 

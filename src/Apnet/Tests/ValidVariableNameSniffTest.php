@@ -2,6 +2,9 @@
 
 namespace Apnet\Tests;
 
+/**
+ * Test `Apnet.NamingConventions` Sniff
+ */
 class ValidVariableNameSniffTest extends \PHPUnit_Framework_TestCase
 {
 
