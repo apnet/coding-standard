@@ -13,7 +13,7 @@ described in the following but the composer way is recommedend:
 
 1. Install The standard as dependency of your composer based project (It will install the composer version of PHP_CodeSniffer as dependency):
 
-        $ php composer.phar require leaphub/phpcs-symfony2-standard:~2.0.0
+        $ php composer.phar require --dev leaphub/phpcs-symfony2-standard:~2.0.0
 
 2. Profit!
 
