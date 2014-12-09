@@ -89,9 +89,12 @@ class Symfony2_Sniffs_Commenting_FunctionCommentSniff extends PEAR_Sniffs_Commen
     } /* end processReturn() */
 
     /**
-     * Is the comment an inheritdoc?
+     * Checks if the comment an inheritdoc?
      *
-     * @return boolean True if the comment is an inheritdoc
+     * @param PHP_CodeSniffer_File $phpcsFile
+     * @param int                  $stackPtr
+     *
+     * @return bool
      */
     protected function isInheritDoc(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
