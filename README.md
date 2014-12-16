@@ -1,4 +1,4 @@
-# Symfony2 PHP CodeSniffer Coding Standard
+# Symfony2 PHP_CodeSniffer Coding Standard
 
 A composer installable coding standard to check against the [Symfony coding standards](http://symfony.com/doc/current/contributing/code/standards.html).
 
@@ -19,7 +19,7 @@ described in the following but the composer way is recommedend:
 
         $ bin/phpcs --standard=vendor/leaphub/phpcs-symfony2-standard/leaphub/phpcs/Symfony2/ --extensions=php src/
 
-### Using PECL
+### Using PEAR
 
 1. Install PHP_CodeSniffer:
 
