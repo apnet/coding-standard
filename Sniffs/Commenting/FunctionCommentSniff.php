@@ -35,6 +35,11 @@ class Symfony2_Sniffs_Commenting_FunctionCommentSniff extends PEAR_Sniffs_Commen
 {
 
     /**
+     * @var string
+     */
+    public $requiredScopes = 'public';
+
+    /**
      * {@inheritdoc}
      */
     public function process(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
@@ -48,7 +53,7 @@ class Symfony2_Sniffs_Commenting_FunctionCommentSniff extends PEAR_Sniffs_Commen
 
         // a comment is not required on protected/private methods
         $method = $phpcsFile->getMethodProperties($stackPtr);
-        $commentRequired = 'public' == $method['scope'];
+        $commentRequired = $this->isRequiredScope($method['scope']);
 
         if (($code === T_COMMENT && !$commentRequired)
             || ($code !== T_DOC_COMMENT && !$commentRequired)
@@ -134,6 +139,17 @@ class Symfony2_Sniffs_Commenting_FunctionCommentSniff extends PEAR_Sniffs_Commen
         } while ($tokens[$returnPos]['code'] === T_WHITESPACE);
 
         return $tokens[$returnPos]['code'] !== T_SEMICOLON;
+    }
+
+    /**
+     * Check if the given function visibility scope needs to have a docblock.
+     *
+     * @param string $scope Visibility scope of the function.
+     *
+     * @return bool
+     */
+    protected function isRequiredScope($scope) {
+        return strpos($this->requiredScopes, $scope) !== FALSE;
     }
 
 }//end class
