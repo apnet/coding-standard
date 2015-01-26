@@ -148,7 +148,8 @@ class Symfony2_Sniffs_Commenting_FunctionCommentSniff extends PEAR_Sniffs_Commen
      *
      * @return bool
      */
-    protected function isRequiredScope($scope) {
+    protected function isRequiredScope($scope)
+    {
         return strpos($this->requiredScopes, $scope) !== FALSE;
     }
 
