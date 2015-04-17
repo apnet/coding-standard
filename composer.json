@@ -4,10 +4,10 @@
     "description" : "Apnet PHP coding standard",
     "license" : "MIT",
     "require" : {
-        "squizlabs/php_codesniffer" : "~1.5,<2.0"
+        "squizlabs/php_codesniffer" : "~1.5"
     },
     "require-dev" : {
-        "phpunit/phpunit" : "~3.7"
+        "phpunit/phpunit" : "~4.0"
     },
     "extra" : {
         "branch-alias": {
@@ -15,7 +15,7 @@
         }
     },
     "autoload" : {
-        "psr-0" : { "Apnet_": "src/" }
+        "psr-0" : { "Apnet_": "src/", "Symfony2_": "src/" }
     },
     "config": {
         "bin-dir" : "bin"

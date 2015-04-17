@@ -1,9 +1,7 @@
 <?php
 
-use PHP_CodeSniffer_Standards_AbstractVariableSniff as BaseSniff;
-
 // @codingStandardsIgnoreStart
-class Apnet_Sniffs_NamingConvensions_ValidVariableNameSniff extends BaseSniff
+class Apnet_Sniffs_NamingConvensions_ValidVariableNameSniff extends PHP_CodeSniffer_Standards_AbstractVariableSniff
 // @codingStandardsIgnoreEnd
 {
 

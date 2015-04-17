@@ -2,13 +2,19 @@
 
 namespace Apnet\Php;
 
-use Apnet\Tests\FunctionCommentSniffTest;
-
+/**
+ * Checkstyle check
+ */
 class Checkstyle implements
   CheckstyleInterfaceOne,
   CheckstyleInterfaceTwo
 {
 
+  /**
+   * Dcdc.
+   *
+   * @var integer
+   */
   private $qwertyOne = 1;
 
   /**
@@ -18,7 +24,7 @@ class Checkstyle implements
    */
   public function methodOne()
   {
-    $this->qwerty();
+    echo $this->qwerty() + $this->qwertyOne;
   }
 
   /**
@@ -38,7 +44,7 @@ class Checkstyle implements
       2;
 
     if (false) {
-      $a = 1;
+      $a = $a + 1;
       for ($i = 0; $i <= 10; $i++) {
         $a++;
       }
@@ -73,9 +79,9 @@ class Checkstyle implements
   /**
    * aVeryLongMethodName
    *
-   * @param \stdClass $arg1  Arg1
-   * @param int       &$arg2 Arg2
-   * @param array     $arg3  Arg3
+   * @param \stdClass $arg1 Arg1
+   * @param int       $arg2 Arg2
+   * @param array     $arg3 Arg3
    *
    * @return null
    */
@@ -88,7 +94,7 @@ class Checkstyle implements
       if (false
         && (2)
       ) {
-        $var1 = array(
+        $arg2 = array(
           $arg1, $arg2, $arg3
         );
       }
@@ -97,6 +103,22 @@ class Checkstyle implements
       return array(
         1, 2
       );
+    }
+  }
+
+  /**
+   * Throw excepion
+   *
+   * @return null
+   * @throws \RuntimeException
+   * @throws \Exception
+   */
+  public function throwException()
+  {
+    if (true) {
+      throw new \RuntimeException("Asdf");
+    } else {
+      throw new \Exception("Qwerty");
     }
   }
 }
