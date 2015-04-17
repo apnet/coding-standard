@@ -79,9 +79,9 @@ class Checkstyle implements
   /**
    * aVeryLongMethodName
    *
-   * @param \stdClass $arg1  Arg1
-   * @param int       &$arg2 Arg2
-   * @param array     $arg3  Arg3
+   * @param \stdClass $arg1 Arg1
+   * @param int       $arg2 Arg2
+   * @param array     $arg3 Arg3
    *
    * @return null
    */
