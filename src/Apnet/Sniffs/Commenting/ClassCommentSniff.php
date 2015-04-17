@@ -1,12 +1,10 @@
 <?php
 
-use PEAR_Sniffs_Commenting_ClassCommentSniff as BaseSniff;
-
 // @codingStandardsIgnoreStart
 /**
  * Parses and verifies the doc comments for classes
  */
-class Apnet_Sniffs_Commenting_ClassCommentSniff extends BaseSniff
+class Apnet_Sniffs_Commenting_ClassCommentSniff extends PEAR_Sniffs_Commenting_ClassCommentSniff
 // @codingStandardsIgnoreEnd
 {
 
