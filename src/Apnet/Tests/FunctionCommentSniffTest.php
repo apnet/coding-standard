@@ -3,7 +3,7 @@
 namespace Apnet\Tests;
 
 /**
- * Test `Apnet.Commenting` Sniff
+ * Test `Apnet.Commenting.FunctionComment` Sniff
  */
 class FunctionCommentSniffTest extends CodeSnifferTestCase
 {

@@ -3,7 +3,7 @@
 namespace Apnet\Tests;
 
 /**
- * Test `Apnet.NamingConventions` Sniff
+ * Test `Apnet.NamingConvensions.ValidVariableName` Sniff
  */
 class ValidVariableNameSniffTest extends CodeSnifferTestCase
 {

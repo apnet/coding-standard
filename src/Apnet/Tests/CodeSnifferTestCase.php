@@ -3,7 +3,7 @@
 namespace Apnet\Tests;
 
 /**
- * CodeSniffer TestCase
+ * Abstract CodeSniffer TestCase
  */
 abstract class CodeSnifferTestCase extends \PHPUnit_Framework_TestCase
 {

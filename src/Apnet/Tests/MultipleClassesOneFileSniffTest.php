@@ -2,6 +2,9 @@
 
 namespace Apnet\Tests;
 
+/**
+ * Test `Apnet.Classes.MultipleClassesOneFile` Sniff
+ */
 class MultipleClassesOneFileSniffClass extends CodeSnifferTestCase
 {
 
