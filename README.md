@@ -11,7 +11,7 @@ Add requirements to composer.json:
 ``` json
 {
   "require-dev" : {
-    "apnet/coding-standard" : "~1.5,<2.0"
+    "apnet/coding-standard" : "~2.0"
   }
 }
 ```

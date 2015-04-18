@@ -5,7 +5,7 @@ namespace Apnet\Tests;
 /**
  * Test `Apnet.NamingConventions` Sniff
  */
-class ValidVariableNameSniffTest extends \PHPUnit_Framework_TestCase
+class ValidVariableNameSniffTest extends CodeSnifferTestCase
 {
 
   /**
@@ -15,12 +15,9 @@ class ValidVariableNameSniffTest extends \PHPUnit_Framework_TestCase
    */
   public function testSniff()
   {
-    $codeSniffer = new \PHP_CodeSniffer();
-    $codeSniffer->process(
-      array(), __DIR__ . "/..", array("Apnet.NamingConvensions.ValidVariableName")
+    $codeSniffer = $this->getCodeSniffer(
+      array("Apnet.NamingConvensions.ValidVariableName")
     );
-    $codeSniffer->setIgnorePatterns(array());
-
     $file = $codeSniffer->processFile(
       dirname(__FILE__) . "/PhpUnit/FunctionCommentSniffClass.php"
     );
