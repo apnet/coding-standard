@@ -21,7 +21,9 @@ Sniffs
 
 * PSR2
 * PEAR.Commenting.InlineComment
-* Apnet.Commenting.FunctionComment - {@inheritdoc} support
+* Symfony2.Classes.MultipleClassesOneFile
+* Symfony2.Commenting.ClassComment
+* Symfony2.Commenting.FunctionComment - with {@inheritdoc} support
 * Apnet.NamingConvensions.ValidVariableName - require camelCase property names
 
 Sniffs with 2-spaces indent

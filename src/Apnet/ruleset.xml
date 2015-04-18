@@ -11,8 +11,6 @@
     </rule>
 
     <rule ref="PEAR.Commenting.InlineComment" />
-    <rule ref="Squiz.Commenting.FunctionCommentThrowTag" />
-    <rule ref="Squiz.Commenting.VariableComment" />
 
     <rule ref="PEAR.ControlStructures.MultiLineCondition">
         <properties>
