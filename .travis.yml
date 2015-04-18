@@ -14,5 +14,5 @@ before_script:
 
 script:
    - bin/phpunit --coverage-text
-   - bin/phpcs --standard=src/Apnet --ignore=*/PhpUnit/* --ignore=src/Symfony2 src
+   - bin/phpcs --standard=src/Apnet --ignore=*/PhpUnit/* src/Apnet
    - bin/phpcs --standard=src/Apnet tests
