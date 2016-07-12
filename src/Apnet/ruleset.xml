@@ -3,50 +3,15 @@
     <description>The Apnet coding standard.</description>
 
     <rule ref="PSR2" />
-
-    <rule ref="Generic.WhiteSpace.ScopeIndent">
-        <properties>
-            <property name="indent" value="2"/>
-        </properties>
-    </rule>
-
-    <rule ref="PEAR.Commenting.InlineComment" />
-
-    <rule ref="PEAR.ControlStructures.MultiLineCondition">
-        <properties>
-            <property name="indent" value="2" />
-        </properties>
-    </rule>
-
-    <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent">
-        <properties>
-            <property name="indent" value="2"/>
-        </properties>
-    </rule>
-
-    <rule ref="PSR2.Classes.ClassDeclaration">
-        <properties>
-            <property name="indent" value="2"/>
-        </properties>
-    </rule>
-
-    <rule ref="PSR2.ControlStructures.SwitchDeclaration">
-        <properties>
-            <property name="indent" value="2"/>
-        </properties>
-    </rule>
-
     <rule ref="PSR2.Methods.FunctionCallSignature">
         <properties>
-            <property name="indent" value="2"/>
             <property name="allowMultipleArguments" value="true"/>
         </properties>
     </rule>
 
-    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration">
-        <properties>
-            <property name="indent" value="2"/>
-        </properties>
-    </rule>
+    <rule ref="PEAR.Commenting.InlineComment" />
+    <rule ref="PEAR.ControlStructures.MultiLineCondition" />
+    <rule ref="PEAR.WhiteSpace.ObjectOperatorIndent" />
 
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration" />
 </ruleset>
