@@ -3,6 +3,8 @@ language: php
 php:
   - 5.5
 
+sudo: false
+
 env:
    global:
       secure: Roz6CKDX0aLflwTCbExErkAV+VMmbpbpYX9JUeS6Y7dmfS5s0q1JERvAwsFuCQL36KMKD5VM43AOmMXyv8SmTRcr9xwr1RQUIEyzaOYLFASEuYw46z3btQxwgcAVS80lDBCO9eAyxz6/+Z5jCQ+9dn7tlGm+fqFEuqlP/u3d+OY=
